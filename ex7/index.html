@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ex 7</title>
+</head>
+<body>
+    <input id="name-input" type="text" placeholder="Enter your name" /> <!creates the input text box and sets the 'backgroud text' of the text box>
+    <button id="my-button">Click Me</button> <!Creates the clickable click me button>
+
+    <script> 
+    var myButton = document.querySelector('#my-button');  //these two seem to take the result of name-input and my-button and store them into variables
+    var nameInput = document.querySelector('#name-input'); 
+
+    myButton.addEventListener('click', function () { //waits for click of button
+        if (nameInput.value !== '') { //if textbox is not empty
+        alert('Hello ' + nameInput.value); //output Hello + name entered
+        }
+    });
+    </script>
+</body>
+</html>
